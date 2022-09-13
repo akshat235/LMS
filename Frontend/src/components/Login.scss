@@ -1,0 +1,112 @@
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+// body{
+//     background-color: aqua;
+// }
+
+.base-container {
+    // display: flexbox;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-position: 'center';
+    background-size: 'cover';
+    background-repeat: 'no-repeat';
+
+}
+
+.header-main {
+    width: 100%;
+    background-color: teal;
+    color: beige;
+    height: 100px;
+    margin: 0px;
+}
+
+.main-title {
+    margin: auto;
+    font-size: xx-large;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    @extend .flexCenter;
+}
+
+
+.msg-container {
+    width: 480px;
+    margin: auto;
+    margin-top: 100px;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+.login-msg {
+    color: teal;
+    font-size: xx-large;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+    height: 50px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    @extend .flexCenter;
+    flex-direction: column;
+}
+
+Button {
+    background-color: teal;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 40px;
+    font-size: 22px;
+    border-color: teal;
+    color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    width: 120px;
+    border-radius: 10px;
+}
+
+.form-login {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    @extend .flexCenter;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    height: 220px;
+}
+
+.entries {
+    width: 100%;
+    margin-left: 20%;
+    margin-top: 4%;
+    margin-bottom: 0%;
+}
+
+.cred-entry {
+    text-indent: 10px;
+    @extend .flexCenter;
+    flex-direction: column;
+    margin-top: 12px;
+    padding: 5px;
+    height: 40px;
+    width: 80%;
+    border-radius: 6px;
+    border: none;
+    font-size: 18px;
+}

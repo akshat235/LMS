@@ -1,0 +1,139 @@
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linktext{
+    text-decoration: none;
+    color: beige;
+}
+
+.Main-Container {
+    height: 700px;
+    
+}
+
+.submit-btn {
+    background-color: teal;
+    height: 40px;
+    font-size: 20px;
+    border-color: teal;
+    color: beige;
+    font-family: Georgia, 'Times New Roman', Times, serif;    width: 100px;
+    border: 1 px;
+    border-radius: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.headermain {
+    width: 100%;
+    background-color: teal;
+    color: beige;
+    height: 65px;
+    margin: 0px;
+    // padding-right: 200px;
+}
+
+.maintitle {
+    margin: auto;
+    font-size: large;
+    // font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    float: left;
+    margin-left: 20px;
+    @extend .flexCenter;
+}
+.textlink1,.textlink2 {
+    margin: 10px;
+    margin-right: 25px;
+    display: table-row;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    float: right;
+    @extend .flexCenter;
+}
+
+.MainContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // background-color: teal;
+
+    .SubContainer {
+        height: fit-content;
+        width: 600px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        margin: 50px auto;
+
+        .Box1 {
+            position: sticky;
+            width: 100%;
+            height: 250px;
+            border: 0.5px solid lightgray;
+            box-sizing: border-box;
+            background-color: white;
+            @extend .flexCenter;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+
+            .Input-Container {
+                width: 80%;
+                height: 80%;
+                @extend .flexCenter;
+                flex-direction: column;
+
+                .flex-Container {
+                    width: 80%;
+                    margin: 5px;
+                }
+
+                .flex-button {
+                    margin-top: 20px; 
+                }
+            }
+        }
+
+        .Box2 {
+            width: 100%;
+            height: fit-content;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+            background-color: white;
+            flex-direction: column;
+
+            .data-flex {
+                margin: 5px 0 0 0;
+                height: 50px;
+                display: flex;
+                align-content: center;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: 500;
+                border-bottom: 0.5px solid lightgray;
+
+                .UserId {
+                    color: #000;
+                    flex: 5;
+                    @extend .flexCenter;
+                }
+
+                .UserName {
+                    flex: 15;
+                    @extend .flexCenter;
+                }
+
+                .Age {
+                    flex: 8;
+                    @extend .flexCenter;
+                }
+
+                .Update,
+                .Delete {
+                    flex: 2;
+                    margin: 6px 5px;
+                }
+            }
+        }
+    }
+}
